@@ -38,7 +38,7 @@ defmodule ErlefWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/academic-papers", PageController, :academic_papers
+    get "/academic-papers", PapersController, :index
     get "/bylaws", PageController, :bylaws
     get "/board_members", PageController, :board_members
     get "/contact", PageController, :contact
